@@ -4,7 +4,6 @@ const playIcon = document.getElementById('play-icon');
 const pauseIcon = document.getElementById('pause-icon');
 const volumeSlider = document.getElementById('volume-slider');
 
-
 function updatePlayPauseIcon() {
     if (audio.paused) {
         playIcon.style.display = '';

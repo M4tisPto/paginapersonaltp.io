@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -7,87 +7,107 @@
     <title>Página de Matias Ramos</title>
 </head>
 <body>
-    
     <header class="title">
         <h1>Matías Ignacio Ramos Becerra</h1>
         <h2>Bienvenido a la página hecho y compuesto por Matías Ramos</h2>
         <h3>Estudiante de Ingeniería en Computación</h3>
     </header>
-    
-    <div class="music">
-        <audio id="custom-audio" src="audios/Welcome to the Green Room - Toby Fox.mp3"></audio>
-        <div class="custom-audio-controls">
-            <button id="play-pause-btn" aria-label="Reproducir/Pausar">
-                <span id="play-icon">&#9654;</span>
-                <span id="pause-icon" style="display:none;">&#9208;</span>
-            </button>
-            <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volumen">
+
+    <section class="music-section fadeInUp-1">
+        <div class="music">
+            <audio id="custom-audio" src="audios/Welcome to the Green Room - Toby Fox.mp3" loop></audio>
+            <div class="custom-audio-controls">
+                <button id="play-pause-btn" aria-label="Reproducir/Pausar">
+                    <span id="play-icon">&#9654;</span>
+                    <span id="pause-icon" style="display:none;">&#9208;</span>
+                </button>
+                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volumen">
+            </div>
+            <p>¡Haz clic para escuchar música!</p>
         </div>
-        <p>¡Haz clic para escuchar música!</p>
-    </div>
-    
+    </section>
+
     <main>
-        <article class="about-me">
+        <article class="about-me fadeInUp-2">
             <h2>Sobre mi</h2>
             <p>Tengo por el momento 17 años de edad, mido 1.76 y ahora mismo estoy estudiando en el Arturo Matte Larrain en el TP (Técnico Profecional).</p>
             <p>Soy una persona tranquila y que puede comunicarse, aunque soy algo introvertido pero puedo llegar a tener una confiansa instantanea si me hablan.</p>
         </article>
-        <article class="hobbies">
+        <article class="hobbies fadeInUp-3">
             <h2>Hobbies</h2>
             <ul>
                 <li id="programing">
                     <h1>Programar</h1>
                     <div class="hobby-images">
-                        <img src="images/HTML5_logo_and_wordmark.png" alt="" class="html">
-                        <img src="images/CSS3_logo_and_wordmark.png" alt="" class="css">
-                        <img src="images/js.png" alt="" class="javascript">
-                        <img src="images/Python-logo-notext.png" alt="" class="python">
+                        <img src="images/HTML5_logo_and_wordmark.png" alt="HTML">
+                        <img src="images/CSS3_logo_and_wordmark.png" alt="CSS">
+                        <img src="images/js.png" alt="JavaScript">
+                        <img src="images/Python-logo-notext.png" alt="Python">
                     </div>
                 </li>
                 <li id="3d-animation">
                     <h1>Animación y modelo 3D</h1>
                     <div class="hobby-images">
-                        <img src="images/Blender_logo_no_text.png" alt="" class="blender">
+                        <img src="images/Blender_logo_no_text.png" alt="Blender">
                     </div>
                 </li>
                 <li id="gaming">
                     <h1>Jugar videojuegos</h1>
                     <div class="hobby-images">
-                        <img src="images/s4woy1dkqmn91.png" alt="" class="ultrakill">
-                        <img src="images/minecraft.png" alt="" class="minecraft">
-                        <img src="images/balatro-icon.png" alt="" class="balatro">
-                        <img src="images/147987895-053c724c-eefd-4cc0-ae20-a1502ab0120d.png" alt="" class="deltarune">
-                        <img src="images/pngegg.png" alt="" class="undertale">
-                        <img src="images/switch-icon.png" alt="" class="swit">
+                        <img src="images/s4woy1dkqmn91.png" alt="Ultrakill">
+                        <img src="images/minecraft.png" alt="Minecraft">
+                        <img src="images/balatro-icon.png" alt="Balatro">
+                        <img src="images/147987895-053c724c-eefd-4cc0-ae20-a1502ab0120d.png" alt="Deltarune">
+                        <img src="images/pngegg.png" alt="Undertale">
+                        <img src="images/switch-icon.png" alt="Switch">
                     </div>
                 </li>
                 <li>
                     <h1>Editor de Videos y Fotos</h1>
                     <div class="hobby-images">
-                        <img src="images/500px-Adobe_Premiere_Pro_CC_icon.png" alt="" class="premiere-pro">
-                        <img src="images/Adobe_After_Effects_CC_icon.png" alt="" class="after-effects">
-                        <img src="images/Adobe_Photoshop_CC_icon.svg.png" alt="" class="photoshop">
+                        <img src="images/500px-Adobe_Premiere_Pro_CC_icon.png" alt="Premiere Pro">
+                        <img src="images/Adobe_After_Effects_CC_icon.png" alt="After Effects">
+                        <img src="images/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop">
                     </div>
                 </li> 
             </ul>
         </article>
     </main>
-    <aside class="proyects">
+
+    <aside class="proyects fadeInUp-4">
         <h1>Algunas cosas que he hecho</h1>
         <div class="wrapper">
-          <div class="wrapper__track">
-            <img class="item" src="images/Screenshot_816.png" alt="">
-            <img class="item" src="images/Screenshot_815.png" alt="">
-            <img class="item" src="images/Screenshot_818.png" alt="">
-            <img class="item" src="images/Screenshot_817.png" alt="">
-            <img class="item" src="images/Screenshot_816.png" alt="">
-            <img class="item" src="images/Screenshot_815.png" alt="">
-            <img class="item" src="images/Screenshot_818.png" alt="">
-            <img class="item" src="images/Screenshot_817.png" alt="">
-          </div>
+            <div class="wrapper__track">
+                <img class="item" src="images/Screenshot_816.png" alt="">
+                <img class="item" src="images/Screenshot_815.png" alt="">
+                <img class="item" src="images/Screenshot_818.png" alt="">
+                <img class="item" src="images/Screenshot_817.png" alt="">
+                <img class="item" src="images/Screenshot_816.png" alt="">
+                <img class="item" src="images/Screenshot_815.png" alt="">
+                <img class="item" src="images/Screenshot_818.png" alt="">
+                <img class="item" src="images/Screenshot_817.png" alt="">
+            </div>
         </div>
     </aside>
-    
+
+    <section class="why fadeInUp-5">
+        <h1>¿Por qué elegí el TP?</h1>
+        <p>Desde muy pequeño he visto a mi padre hacer cosas a una computadora o modificandole algo, y me intrigo mucho eso, también cuando vi como se desarrolla un videojuego o como funcionan ciertos virus a los dispositivos, entonces tuve decidido en irme a estudiar informática.</p>
+    </section>
+
+    <footer class="qr-code_or-link fadeInUp-6">
+        <h1>Mira mis redes o curriculum mediante estos códigos QR para más información</h1>
+        <div class="qrcode-flex">
+            <div class="qr-media">
+                <h1>Redes Sociales</h1>
+                <img src="images/M4tisPto.png" alt="QR Redes Sociales" class="qr-socialmedia">
+            </div>
+            <div class="curriculum">
+                <h1>Curriculum</h1>
+                <img src="images/qr_download (1).png" alt="QR Curriculum" class="qr-curriculum">
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
