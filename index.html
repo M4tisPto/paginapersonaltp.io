@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Matias Ramos</title>
+</head>
+<body>
+    <header class="title">
+        <h1>Matías Ignacio Ramos Becerra</h1>
+        <h2>Bienvenido a la página hecho y compuesto por Matías Ramos</h2>
+        <h3>Estudiante de Ingeniería en Computación</h3>
+    </header>
+    <div class="music">
+        <h1>Poner música de mientras</h1>
+        <div class="custom-audio">
+            <audio id="audio" src="audios/Welcome to the Green Room - Toby Fox.mp3" loop></audio>
+            <button id="play-pause" aria-label="Reproducir">
+                <span id="play-icon" style="display:inline;">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <circle cx="11" cy="11" r="11" fill="#222"/>
+                        <polygon points="8,6 17,11 8,16" fill="#fff"/>
+                    </svg>
+                </span>
+                <span id="pause-icon" style="display:none;">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <circle cx="11" cy="11" r="11" fill="#222"/>
+                        <rect x="7" y="6" width="3" height="10" rx="1" fill="#fff"/>
+                        <rect x="12" y="6" width="3" height="10" rx="1" fill="#fff"/>
+                    </svg>
+                </span>
+            </button>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+        </div>
+    <main>
+        <article class="about-me">
+            <h2>Sobre mi</h2>
+            <p>Tengo por el momento 17 años de edad, mido 1.76 y ahora mismo estoy estudiando en el Arturo Matte Larrain en el TP (Técnico Profecional).</p>
+            <p>Soy una persona tranquila y que puede comunicarse, aunque soy algo introvertido pero puedo llegar a tener una confiansa instantanea si me hablan.</p>
+        </article>
+        <article class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li id="programing">
+                    <h1>Programar</h1>
+                    <div class="hobby-images">
+                        <img src="images/HTML5_logo_and_wordmark.png" alt="" class="html">
+                        <img src="images/CSS3_logo_and_wordmark.png" alt="" class="css">
+                        <img src="images/js.png" alt="" class="javascript">
+                        <img src="images/Python-logo-notext.png" alt="" class="python">
+                    </div>
+                </li>
+                <li id="3d-animation">
+                    <h1>Animación 3D</h1>
+                    <div class="hobby-images">
+                        <img src="images/Blender_logo_no_text.png" alt="" class="blender">
+                    </div>
+                </li>
+                <li id="gaming">
+                    <h1>Jugar videojuegos</h1>
+                    <div class="hobby-images">
+                        <img src="images/s4woy1dkqmn91.png" alt="" class="ultrakill">
+                        <img src="images/minecraft.png" alt="" class="minecraft">
+                        <img src="images/balatro-icon.png" alt="" class="balatro">
+                        <img src="images/147987895-053c724c-eefd-4cc0-ae20-a1502ab0120d.png" alt="" class="deltarune">
+                        <img src="images/pngegg.png" alt="" class="undertale">
+                        <img src="images/switch-icon.png" alt="" class="swit">
+                    </div>
+                </li>
+                <li>
+                    <h1>Editor de Videos y Fotos</h1>
+                    <div class="hobby-images">
+                        <img src="images/500px-Adobe_Premiere_Pro_CC_icon.png" alt="" class="premiere-pro">
+                        <img src="images/Adobe_After_Effects_CC_icon.png" alt="" class="after-effects">
+                        <img src="images/Adobe_Photoshop_CC_icon.svg.png" alt="" class="photoshop">
+                    </div>
+                </li> 
+            </ul>
+        </article>
+    </main>
+    <aside class="proyects">
+        <h1>Trabajos que he hecho</h1>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
