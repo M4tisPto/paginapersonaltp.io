@@ -10,6 +10,7 @@ body {
     color: #333;
     background-image: url('images/Bg_options_4.png');
     animation: scrollBg 30s linear infinite;
+    overflow-x: hidden;
 }
 
 
@@ -47,13 +48,19 @@ div.music {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 2.5rem auto 2.5rem auto; /* Más separación arriba y abajo */
+    margin: 2.5rem auto 2.5rem auto;
     width: 90%;
     max-width: 600px;
     border-radius: 12px;
     animation: fadeInUp 0.5s ease-in-out;
 }
-    audio {
+
+
+main, aside.proyects {
+    margin-top: 2rem;
+}
+
+audio {
         width: 100%;
         max-width: 350px;
         background: #222;
@@ -65,7 +72,7 @@ div.music {
         outline: none;
     }
 
-/* Chrome/Safari */
+
 audio::-webkit-media-controls-panel {
     background: #222;
     border-radius: 10px;
@@ -88,7 +95,7 @@ audio::-webkit-media-controls-volume-slider {
     border-radius: 5px;
 }
 
-/* Firefox */
+
 audio::-moz-range-thumb {
     background: #fff;
 }
@@ -96,7 +103,7 @@ audio::-moz-range-track {
     background: #444;
 }
 
-/* General fallback */
+
 audio {
     color-scheme: dark;
 }
@@ -106,9 +113,9 @@ main {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin-top: 0; /* Elimina el margen superior extra */
+    margin-top: 0; 
     width: 96%;
-    max-width: 900px; /* Más ancho que antes */
+    max-width: 900px; 
     margin-left: auto;
     margin-right: auto;
 }
@@ -208,4 +215,330 @@ article:nth-child(2) { animation-delay: 0.5s; }
 
 .custom-audio input[type="range"] {
     width: 100px;
+}
+
+.custom-audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.custom-audio-controls button {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.custom-audio-controls button:hover {
+    background: #444;
+}
+
+.custom-audio-controls input[type="range"] {
+    width: 120px;
+    accent-color: #222;
+    cursor: pointer;
+}
+
+.proyects{
+    
+}
+
+/* Mejora visual para el aside de proyectos */
+aside.proyects {
+    background: rgba(255,255,255,0.96);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    margin: 2.5rem auto 2rem auto;
+    max-width: 700px;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1s;
+}
+
+aside.proyects h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 2.2rem;
+    color: #232323;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+aside.proyects ul {
+    width: 100%;
+    padding-left: 1.2rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+aside.proyects li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+aside.proyects li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4caf50;
+    font-size: 1.2rem;
+}
+
+aside.proyects a {
+    color: #2196f3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside.proyects a:hover {
+    color: #1976d2;
+}
+
+aside.proyects .proyect-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+}
+
+aside.proyects .proyect-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+aside.proyects .proyect-link:hover {
+    background: #1976d2;
+}
+
+aside.proyects .proyect-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+aside.proyects .proyect-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+aside.proyects .proyect-tech span {
+    background: #e0f7fa;
+    color: #00796b;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+aside.proyects .proyect-date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+}
+
+aside.proyects .proyect-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+aside.proyects .proyect-links a {
+    flex: 1;
+    display: block;
+    text-align: center;
+    padding: 0.8rem 0;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+aside.proyects .proyect-links a:hover {
+    background: rgba(33, 150, 243, 0.1);
+}
+
+aside.proyects .proyect-links a i {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+aside.proyects .proyect-links a span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+aside.proyects .proyect-links a:hover span {
+    color: #2196f3;
+}
+
+aside.proyects .proyect-links a:hover i {
+    color: #1976d2;
+}
+
+aside.proyects .hidden {
+    display: none;
+}
+
+aside.proyects .show {
+    display: block;
+}
+
+aside.proyects .toggle-button {
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+aside.proyects .toggle-button:hover {
+    background: #1976d2;
+}
+
+aside.proyects .toggle-button:focus {
+    outline: none;
+}
+
+aside.proyects .toggle-button[disabled] {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+aside.proyects .toggle-button[disabled]:hover {
+    background: #ccc;
+}
+
+aside.proyects .expanded {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+aside.proyects .collapsed {
+    max-height: 200px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+aside.proyects .collapse-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+aside.proyects .fade-enter {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+aside.proyects .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+aside.proyects .fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+aside.proyects .fade-exit-active {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+aside.proyects .slide-enter {
+    max-height: 0;
+    opacity: 0;
+}
+
+aside.proyects .slide-enter-active {
+    max-height: 1000px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+aside.proyects .slide-exit {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+aside.proyects .slide-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    border: 1.5px solid #e0e0e0;
+    background: #f8f8fa;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    position: relative;
+}
+
+.wrapper__track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    animation: wrapper-scroll 10s linear infinite;
+}
+
+@keyframes wrapper-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.wrapper .item {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 2px solid #fff;
+    background: #eaeaea;
+    margin: 0 10px;
+    flex-shrink: 0;
 }

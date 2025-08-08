@@ -1,33 +1,36 @@
-const audio = document.getElementById('audio');
-const playPause = document.getElementById('play-pause');
-const volume = document.getElementById('volume');
+const audio = document.getElementById('custom-audio');
+const playPauseBtn = document.getElementById('play-pause-btn');
 const playIcon = document.getElementById('play-icon');
 const pauseIcon = document.getElementById('pause-icon');
+const volumeSlider = document.getElementById('volume-slider');
 
-function updateIcons() {
+
+function updatePlayPauseIcon() {
     if (audio.paused) {
-        playIcon.style.display = 'inline';
+        playIcon.style.display = '';
         pauseIcon.style.display = 'none';
     } else {
         playIcon.style.display = 'none';
-        pauseIcon.style.display = 'inline';
+        pauseIcon.style.display = '';
     }
 }
 
-playPause.addEventListener('click', () => {
+playPauseBtn.addEventListener('click', () => {
     if (audio.paused) {
         audio.play();
     } else {
         audio.pause();
     }
-    updateIcons();
+    updatePlayPauseIcon();
 });
 
-audio.addEventListener('play', updateIcons);
-audio.addEventListener('pause', updateIcons);
+audio.addEventListener('play', updatePlayPauseIcon);
+audio.addEventListener('pause', updatePlayPauseIcon);
 
-volume.addEventListener('input', () => {
-    audio.volume = volume.value;
+volumeSlider.addEventListener('input', () => {
+    audio.volume = volumeSlider.value;
 });
 
-updateIcons();
+// Inicializa icono y volumen
+updatePlayPauseIcon();
+audio.volume = volumeSlider.value;

@@ -7,32 +7,25 @@
     <title>Página de Matias Ramos</title>
 </head>
 <body>
+    
     <header class="title">
         <h1>Matías Ignacio Ramos Becerra</h1>
         <h2>Bienvenido a la página hecho y compuesto por Matías Ramos</h2>
         <h3>Estudiante de Ingeniería en Computación</h3>
     </header>
+    
     <div class="music">
-        <h1>Poner música de mientras</h1>
-        <div class="custom-audio">
-            <audio id="audio" src="audios/Welcome to the Green Room - Toby Fox.mp3" loop></audio>
-            <button id="play-pause" aria-label="Reproducir">
-                <span id="play-icon" style="display:inline;">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <circle cx="11" cy="11" r="11" fill="#222"/>
-                        <polygon points="8,6 17,11 8,16" fill="#fff"/>
-                    </svg>
-                </span>
-                <span id="pause-icon" style="display:none;">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                        <circle cx="11" cy="11" r="11" fill="#222"/>
-                        <rect x="7" y="6" width="3" height="10" rx="1" fill="#fff"/>
-                        <rect x="12" y="6" width="3" height="10" rx="1" fill="#fff"/>
-                    </svg>
-                </span>
+        <audio id="custom-audio" src="audios/Welcome to the Green Room - Toby Fox.mp3"></audio>
+        <div class="custom-audio-controls">
+            <button id="play-pause-btn" aria-label="Reproducir/Pausar">
+                <span id="play-icon">&#9654;</span>
+                <span id="pause-icon" style="display:none;">&#9208;</span>
             </button>
-            <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+            <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1" aria-label="Volumen">
         </div>
+        <p>¡Haz clic para escuchar música!</p>
+    </div>
+    
     <main>
         <article class="about-me">
             <h2>Sobre mi</h2>
@@ -52,7 +45,7 @@
                     </div>
                 </li>
                 <li id="3d-animation">
-                    <h1>Animación 3D</h1>
+                    <h1>Animación y modelo 3D</h1>
                     <div class="hobby-images">
                         <img src="images/Blender_logo_no_text.png" alt="" class="blender">
                     </div>
@@ -80,8 +73,21 @@
         </article>
     </main>
     <aside class="proyects">
-        <h1>Trabajos que he hecho</h1>
+        <h1>Algunas cosas que he hecho</h1>
+        <div class="wrapper">
+          <div class="wrapper__track">
+            <img class="item" src="images/Screenshot_816.png" alt="">
+            <img class="item" src="images/Screenshot_815.png" alt="">
+            <img class="item" src="images/Screenshot_818.png" alt="">
+            <img class="item" src="images/Screenshot_817.png" alt="">
+            <img class="item" src="images/Screenshot_816.png" alt="">
+            <img class="item" src="images/Screenshot_815.png" alt="">
+            <img class="item" src="images/Screenshot_818.png" alt="">
+            <img class="item" src="images/Screenshot_817.png" alt="">
+          </div>
+        </div>
     </aside>
+    
     <script src="script.js"></script>
 </body>
 </html>
