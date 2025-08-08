@@ -33,13 +33,13 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Separar sección de música del main */
+
 .music-section {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
-    margin-bottom: 2.5rem; /* Añade espacio debajo */
+    margin-bottom: 2.5rem; 
 }
 
 div.music {
@@ -52,6 +52,7 @@ div.music {
     max-width: 600px;
     border-radius: 12px;
     margin: 0 auto;
+    animation: fadeInUp;
 }
 
 custom-audio {
